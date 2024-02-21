@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleAppFP\ConsoleAppFP.csproj" />
+    <ProjectReference Include="..\SlowJams.Functional\SlowJams.Functional.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LaYumba.Functional">
+      <HintPath>..\..\Source Code\LaYumba.Functional\bin\Debug\net6.0\LaYumba.Functional.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+</Project>
