@@ -59,7 +59,7 @@ public class StatelessAgent<Msg> : Agent<Msg>
 public sealed class ActionBlock<TInput> : IDataflowBlock, ITargetBlock<TInput>
 {
    public ActionBlock(Action<TInput> action);
-   public ActionBlock(Func<TInput, Task> action);  // <-----------------------used by StatefulAgent which await RatesApi.GetRateAsync
+   public ActionBlock(Func<TInput, Task> action);  // <----------------------used by StatefulAgent which await RatesApi.GetRateAsync
    // ...
    public bool Post(TInput item);
 }
